@@ -13,8 +13,8 @@ int main(){
     printf("\n");
     int a = area(l,b);
     int p= perimeter(l,b);
-    printf("area of rectangle is %d", a);
-    printf("\nPerimeter of dddddddthe rectangle is %d", p);
+    printf("area of rectangle is %d \n", a);
+    printf("\nPerimeter of the rectangle is %d \n\n", p);
     return 0;
 
 }
