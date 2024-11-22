@@ -1,21 +1,26 @@
-#include <stdio.h>
-int sum( int n);
+/*
+
+*/
+
+
+#include<stdio.h>
+#include<string.h>
 
 int main(){
-    int n=10;
-    printf("%d", sum(n));
-    return 0;
+    char str[100], rev[100];
+    int i,j,len;
 
+    printf("Enter your string:");
+    scanf("%s", &str);
+    
+    len= strlen(str);
+
+    for ( i=0, j=len-1 ; j>=0 ; i++, j-- ) {
+        rev[i]= str[j];
+    }
+    rev[i] = '\0' ;
+     if (strcmp( rev, str)==0 )
+         printf("Palindrome");
+    else 
+        printf("Not Palindrome");
 }
-
-int sum( int n){
-    if (n==0)
-    return 0;
-
-    int sumnm1 = sum(n-1);
-    int sumn= sumnm1 + n ;
-    return sumn;
-}
-
-
-// not >> arithmatic >> relational >> logical  
